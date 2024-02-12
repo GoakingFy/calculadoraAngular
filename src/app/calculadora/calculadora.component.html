@@ -1,0 +1,38 @@
+<p>calculadora works!</p>
+
+
+
+
+<div class="container">
+    <h2>Mini Calculadora</h2>
+    <div class="row">
+        <div class="col-6 d-flex align-self-end">
+            <p>Resultado:{{resultado}}</p>
+    
+        </div>
+    
+    <form class="col-6 d-flex flex-column">
+            <div class="">
+                <label for="numero1" >Numero 1:</label>
+                <input  type="number" [(ngModel)]="numero1" name="numero1" >
+        
+            </div>
+        
+            <div class="">
+                <label for="numero2">Numero 2:</label>
+                <input type="number"[(ngModel)]="numero2" name="numero2" >
+            </div>
+        
+            <div class="container d-flex">
+                <button type="submit" class="btn btn-primary " (click)="sumar()">Sumar</button>
+                <button type="submit" class="btn btn-primary " (click)="restar()">restar</button>
+            
+            </div>
+        </form>
+    </div>
+    
+    
+
+</div>    
+
+
